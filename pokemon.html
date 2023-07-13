@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagens/ntdicon.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/pokemon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <title>NT-D System</title>
+</head>
+<body>
+    <!--start header-->
+    <div class="header">
+        <h1>NT-D System</h1>
+        <h2>New Type Drive System<span class="light-h2">❚</span></h2>
+
+        <!--img - donnatalk gif-->
+        <img class="donna-gif" src="imagens/donna2.gif"/>
+
+        <nav id="menu">
+            <ul id="ul_menu">
+                <li onmouseover="mouseOver()" onmouseout="mouseOut()"><a href="index.html" target="_self">home<span id="luz" class="light">❚</span></a></li>
+                <li onmouseover="mouseOver2()" onmouseout="mouseOut2()"><a href="videogames.html" target="_self">videogames<span id="luz2" class="light">❚</span></a></li>
+                <li onmouseover="mouseOver3()" onmouseout="mouseOut3()"><a href="maquina.html" target="_self">máquina<span id="luz3" class="light">❚</span></a></li>
+                <li onmouseover="mouseOver4()" onmouseout="mouseOut4()"><a href="quest.html" target="_self">quest log<span id="luz4" class="light">❚</span></a></li>
+                <li onmouseover="mouseOver5()" onmouseout="mouseOut5()"><a href="projetos.html" target="_self">projetos<span id="luz5" class="light">❚</span></a></li>
+                <li onmouseover="mouseOver6()" onmouseout="mouseOut6()"><a href="pokemon.html" target="_self">pokémon<span id="luz6" class="light">❚</span></a></li>
+                <li onmouseover="mouseOver7()" onmouseout="mouseOut7()"><a href="monsterhunter.html" target="_self">monster hunter<span id="luz7" class="light">❚</span></a></li>
+            </ul> 
+        </nav>
+
+    </div>
+
+    <div class="corpo">
+
+        <div class="container-conteudo-fixo2">
+            
+            <div class="pk">
+                <h4>Pokémon Scarlet</h4>
+                <h5>Guia Geral</h5>
+            </div>
+
+            <div class="tipos">
+                
+                <button onclick="typexpand()" id="expandirb">expandir</button>
+            
+                <h5>Tabela de Tipagem</h5>      
+                
+                <table id="tabeladetipo">
+                    <thead>
+                        <tr>
+                            <th>Tipo</th>
+                            <th>Forte Contra</th>
+                            <th>Fraco Contra</th>
+                        </tr>
+                    </thead>
+
+                    <tr id="corpotabelatipo">
+                        <td style="background: #a8b820; text-shadow: 1px 1px 0px #000;">bug</td>
+                        <td>grass, dark, psychic</td>
+                        <td>fire, flying, rock</td>
+                    </tr>
+    
+                    <tr id="corpotabelatipo">
+                        <td style="background: #705848; text-shadow: 1px 1px 0px #000;">dark</td>
+                        <td>ghost, psychic</td>
+                        <td>bug, fairy, fighting</td>
+                    </tr>
+    
+                    <tr id="corpotabelatipo">
+                        <td style="background: #7038f8; text-shadow: 1px 1px 0px #000;">dragon</td>
+                        <td>dragon</td>
+                        <td>dragon, fairy, ice</td>
+                    </tr>
+
+                    <tr id="corpotabelatipo">
+                        <td style="background: #f8d030; text-shadow: 1px 1px 0px #000;">electric</td>
+                        <td>flying, water</td>
+                        <td>ground</td>
+                    </tr>
+
+                    <tr id="corpotabelatipo">
+                        <td style="background: #f0b6bc; text-shadow: 1px 1px 0px #000;">fairy</td>
+                        <td>fighting, dark, dragon</td>
+                        <td>poison, steel</td>
+                    </tr>
+
+                    <tr id="corpotabelatipo">
+                        <td style="background: #c03028; text-shadow: 1px 1px 0px #000;">fighting</td>
+                        <td>dark, ice, normal, rock, steel</td>
+                        <td>fairy, flying, psychic</td>
+                    </tr>
+
+                    <tr id="corpotabelatipo">
+                        <td style="background: #f08030; text-shadow: 1px 1px 0px #000;">fire</td>
+                        <td>bug, grass, ice, steel</td>
+                        <td>ground, rock, water</td>
+                    </tr>
+
+                    <tr id="corpotabelatipo">
+                        <td style="background: #a890f0; text-shadow: 1px 1px 0px #000;">flying</td>
+                        <td>bug, fighting, grass</td>
+                        <td>eletric, ice, rock</td>
+                    </tr>
+
+                    <tr id="corpotabelatipo">
+                        <td style="background: #705898; text-shadow: 1px 1px 0px #000;">ghost</td>
+                        <td>ghost, psychic</td>
+                        <td>dark, ghost</td>
+                    </tr>
+
+                    <tr id="corpotabelatipo">
+                        <td style="background: #78c850; text-shadow: 1px 1px 0px #000;">grass</td>
+                        <td>ground, rock, water</td>
+                        <td>bug, fire, flying, ice, poison</td>
+                    </tr>
+
+                    <tr id="corpotabelatipo">
+                        <td style="background: #e0c068; text-shadow: 1px 1px 0px #000;">ground</td>
+                        <td>electric, fire, poison, rock, steel</td>
+                        <td>grass, ice, water</td>
+                    </tr>
+
+                    <tr id="corpotabelatipo">
+                        <td style="background: #98d8d8; text-shadow: 1px 1px 0px #000;">ice</td>
+                        <td>dragon, flying, grass, ground</td>
+                        <td>fighting, fire, rock, steel</td>
+                    </tr>
+
+                    <tr id="corpotabelatipo">
+                        <td style="background: #a8a878; text-shadow: 1px 1px 0px #000;">normal</td>
+                        <td>--</td>
+                        <td>fighting</td>
+                    </tr>
+
+                    <tr id="corpotabelatipo">
+                        <td style="background: #a040a0; text-shadow: 1px 1px 0px #000;">poison</td>
+                        <td>fairy, grass</td>
+                        <td>ground, psychic</td>
+                    </tr>
+
+                    <tr id="corpotabelatipo">
+                        <td style="background: #f85888; text-shadow: 1px 1px 0px #000;">psychic</td>
+                        <td>fighting, poison</td>
+                        <td>bug, dark, ghost</td>
+                    </tr>
+
+                    <tr id="corpotabelatipo">
+                        <td style="background: #b8a038; text-shadow: 1px 1px 0px #000;">rock</td>
+                        <td>bug, fire, flying, ice</td>
+                        <td>fighting, grass, ground, steel, water</td>
+                    </tr>
+
+                    <tr id="corpotabelatipo">
+                        <td style="background: #b8b8d0; text-shadow: 1px 1px 0px #000;">steel</td>
+                        <td>fairy, ice, rock</td>
+                        <td>fighting, fire, ground</td>
+                    </tr>
+
+                    <tr id="corpotabelatipo">
+                        <td style="background: #6890f0; text-shadow: 1px 1px 0px #000;">water</td>
+                        <td>fire, ground, rock</td>
+                        <td>eletric, grass</td>
+                    </tr>
+
+                </table>
+
+                <div class="drop">
+                    <h5 id="saltyh5">Drop de Salty Herba Mystica</h5>
+                    <nav id="menu_herbamystica">
+                        <ul id="ul_herba">
+                            <li class="li5estrela">Slowbro 5<i class="fa-solid fa-star"></i></li>
+                            <li class="li5estrela">Cloyster 5<i class="fa-solid fa-star"></i></li>
+                            <li class="li5estrela">Gengar 5<i class="fa-solid fa-star"></i></li>
+                            <li class="li5estrela">Blissey 5<i class="fa-solid fa-star"></i></li>
+                            <li class="li5estrela">Glalie 5<i class="fa-solid fa-star"></i></li>
+                            <li class="li5estrela">Drifblim 5<i class="fa-solid fa-star"></i></li>
+                            <li class="li5estrela">Bronzong 5<i class="fa-solid fa-star"></i></li>
+                            <li class="li5estrela">Hippowdon 5<i class="fa-solid fa-star"></i></li>
+                            <li class="li5estrela">Amoonguss 5<i class="fa-solid fa-star"></i></li>
+                            <li class="li5estrela">Eelektross 5<i class="fa-solid fa-star"></i></li>
+                            <li class="li5estrela">Avalugg 5<i class="fa-solid fa-star"></i></li>
+                            <li class="li5estrela">Greedent 5<i class="fa-solid fa-star"></i></li>
+                            <li class="li5estrela">Corviknight 5<i class="fa-solid fa-star"></i></li>
+                            <li class="li5estrela">Coalossal 5<i class="fa-solid fa-star"></i></li>
+                            <li class="li5estrela">Copperajah 5<i class="fa-solid fa-star"></i></li>
+                            <li class="li5estrela">Dondozo 5<i class="fa-solid fa-star"></i></li>
+                            <li class="li5estrela">Palafin 5<i class="fa-solid fa-star"></i></li>
+                            <li class="li5estrela">Orthworm 5<i class="fa-solid fa-star"></i></li>
+                            <li class="li5estrela">Cetitan 5<i class="fa-solid fa-star"></i></li>
+                            <li class="li5estrela">Garganacl 5<i class="fa-solid fa-star"></i></li>
+                            <li class="li6estrela">Vaporeon 6<i class="fa-solid fa-star"></i></li>
+                            <li class="li6estrela">Blissey 6<i class="fa-solid fa-star"></i></li>
+                            <li class="li6estrela">Pelipper 6<i class="fa-solid fa-star"></i></li>
+                            <li class="li6estrela">Torkoal 6<i class="fa-solid fa-star"></i></li>
+                            <li class="li6estrela">Hippowdon 6<i class="fa-solid fa-star"></i></li>
+                            <li class="li6estrela">Amoonguss 6<i class="fa-solid fa-star"></i></li>
+                            <li class="li6estrela">Avalugg 6<i class="fa-solid fa-star"></i></li>
+                            <li class="li6estrela">Toxapex 6<i class="fa-solid fa-star"></i></li>
+                            <li class="li6estrela">Corviknight 6<i class="fa-solid fa-star"></i></li>
+                            <li class="li6estrela">Farigiraf 6<i class="fa-solid fa-star"></i></li>
+                            <li class="li6estrela">Dondozo 6<i class="fa-solid fa-star"></i></li>
+                            <li class="li6estrela">Orthworm 6<i class="fa-solid fa-star"></i></li>
+                            <li class="li6estrela">Cetitan 6<i class="fa-solid fa-star"></i></li>
+                            <li class="li6estrela">Klawf 6<i class="fa-solid fa-star"></i></li>
+                            <li class="li6estrela">Garganacl 6<i class="fa-solid fa-star"></i></li>
+                            <li class="li6estrela">Dachsbun 6<i class="fa-solid fa-star"></i></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="natures">
+                <h5>Perfect Pokémon</h5>
+
+                <div class="button-center">
+                    <button onclick="iv()" id="ib">Iv's</button>
+                    <button onclick="nature()" id="nb">Natures</button>
+                    <button onclick="ev()" id="ev">Ev's Training</button>
+                </div>
+                
+                <div id="ivdiv" style="display: none;">
+                    <table id="ivtable">
+                        <thead>
+                            <tr>
+                                <th id="ivth">individual values</th>
+                                <th id="ivth">base iv points</th>
+                            </tr>
+                        </thead>
+
+                        <tr>
+                            <td>best</td> <td>31 <span style="color: yellow; font-size: 9pt;">perfect</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>fantastic</td> <td>30</td>
+                        </tr>
+
+                        <tr>
+                            <td>very good</td> <td>26 - 29</td>
+                        </tr>
+
+                        <tr>
+                            <td>pretty good</td> <td>16 - 25</td>
+                        </tr>
+
+                        <tr>
+                            <td>decent</td> <td>1 - 15</td>
+                        </tr>
+
+                        <tr>
+                            <td>no good</td> <td>0</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="naturediv" style="display: none;">
+                    <div id="naturelegenda">
+                        <span style="color: #3db661; margin-right: 5px;"><i class="fa-solid fa-leaf"></i> nature</span> 
+                        <span style="color: #3d80b6; margin-right: 5px;"><i class="fa-solid fa-hand-fist"></i> forte contra</span> 
+                        <span style="color: #b63d3d;"><i class="fa-regular fa-face-sad-tear"></i> fraco contra</span>
+                    
+                        <table class="naturetable1">
+                            <tr>
+                                <td class="tdnature">Lonely</td>
+                                <td class="tdnature">Adamant</td>
+                                <td class="tdnature">Naughty</td>
+                                <td class="tdnature">Brave</td>
+                                <td class="tdnature">Bold</td>
+                                <td class="tdnature">Impish</td>
+                                <td class="tdnature">Lax</td>
+                                <td class="tdnature">Relaxed</td>
+                                <td class="tdnature">Modest</td>
+                                <td class="tdnature">Mild</td>
+                            </tr>
+
+                            <tr>
+                                <td class="tdforte">Attack</td>
+	                            <td class="tdforte">Attack</td>
+	                            <td class="tdforte">Attack</td>
+                                <td class="tdforte">Attack</td>
+                                <td class="tdforte">Defense</td>
+                                <td class="tdforte">Defense</td>
+                                <td class="tdforte">defense</td>
+                                <td class="tdforte">Defense</td>
+                                <td class="tdforte">Sp. Attack</td>
+                                <td class="tdforte">Sp. Attack</td>
+                            </tr>
+
+                            <tr>
+                                <td class="tdfraco">Defense</td>
+                                <td class="tdfraco">Sp. Attack</td>
+                                <td class="tdfraco">Sp. Defense</td>
+                                <td class="tdfraco">Speed</td>
+                                <td class="tdfraco">Attack</td>
+                                <td class="tdfraco">Sp. Attack</td>
+                                <td class="tdfraco">Sp. Defense</td>
+                                <td class="tdfraco">Speed</td>
+                                <td class="tdfraco">Attack</td>
+                                <td class="tdfraco">Defense</td>
+                            </tr>
+                            </table>
+
+                            <table class="naturetable2">
+                            <tr>
+                                <td class="tdnature">Rash</td>
+                                <td class="tdnature">Quiet</td>
+                                <td class="tdnature">Calm</td>
+                                <td class="tdnature">Gentle</td>
+                                <td class="tdnature">Careful</td>
+                                <td class="tdnature">Sassy</td>
+                                <td class="tdnature">Timid</td>
+                                <td class="tdnature">Hasty</td>
+                                <td class="tdnature">Jolly</td>
+                                <td class="tdnature">Naive</td>
+                            </tr>
+
+                            <tr>
+                                <td class="tdforte">Sp. Attack</td>
+                                <td class="tdforte">Sp. Attack</td>
+                                <td class="tdforte">Sp. Defense</td>
+                                <td class="tdforte">Sp. Defense</td>
+                                <td class="tdforte">Sp. Defense</td>
+                                <td class="tdforte">Sp. Defense</td>
+                                <td class="tdforte">Speed</td>
+                                <td class="tdforte">Speed</td>
+                                <td class="tdforte">Speed</td>
+                                <td class="tdforte">Speed</td>
+                            </tr>
+
+                            <tr>
+                                <td class="tdfraco">Sp. Defense</td>
+                                <td class="tdfraco">Speed</td>
+                                <td class="tdfraco">Attack</td>
+                                <td class="tdfraco">Defense</td>
+                                <td class="tdfraco">Sp. Attack</td>
+                                <td class="tdfraco">Speed</td>
+                                <td class="tdfraco">Attack</td>
+                                <td class="tdfraco">Defense</td>
+                                <td class="tdfraco">Sp. Attack</td>
+                                <td class="tdfraco">Sp. Defense</td>
+                            </tr>
+                        </table>
+
+                        <table class="naturetable3">
+                            <tr>
+                                <td class="tdnature">Hardy</td>
+                                <td class="tdnature">Docile</td>
+                                <td class="tdnature">Bashful</td>
+                                <td class="tdnature">Quirky</td>
+                                <td class="tdnature">Serious</td>
+                            </tr>
+
+                            <tr>
+                                <td class="tdforte">-</td>
+                                <td class="tdforte">-</td>
+                                <td class="tdforte">-</td>
+                                <td class="tdforte">-</td>
+                                <td class="tdforte">-</td>
+                            </tr>
+
+                            <tr>
+                                <td class="tdfraco">-</td>
+                                <td class="tdfraco">-</td>
+                                <td class="tdfraco">-</td>
+                                <td class="tdfraco">-</td>
+                                <td class="tdfraco">-</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div id="evtrainingdiv" style="display: none;">
+                    <div id="evtablepoint">
+                        <table>
+                            <thead>
+                                <tr class="corpo-tabela-ev">
+                                    <th>ev</th>
+                                    <th>pokémon</th>
+                                    <th>local</th>
+                                    <th>sanduiche recomendado</th>
+                                </tr>
+                            </thead>
+
+                            <tr class="corpo-tabela-ev">
+                                <td>hp</td>
+                                <td>paldean wooper, azurill, lechonk</td>
+                                <td>south province (area one)</td>
+                                <td>ham sandwich (#80)</td>
+                            </tr>
+
+                            <tr class="corpo-tabela-ev">
+                                <td>attack</td>
+                                <td>yungoos, shinx</td>
+                                <td>south province (area three)</td>
+                                <td>avocado sandwich (#44)</td>
+                            </tr>
+
+                            <tr class="corpo-tabela-ev">
+                                <td>defense</td>
+                                <td>tarountula, scatterbug</td>
+                                <td>south province (area one)</td>
+                                <td>jambon-buerre (#1)</td>
+                            </tr>
+
+                            <tr class="corpo-tabela-ev">
+                                <td>sp attack</td>
+                                <td>psyduck</td>
+                                <td>south province (area one)</td>
+                                <td>zesty sandwich (#56)</td>
+                            </tr>
+
+                            <tr class="corpo-tabela-ev">
+                                <td>sp defense</td>
+                                <td>spoink</td>
+                                <td>south province (area three)</td>
+                                <td>smoky sandwich (#92)</td>
+                            </tr>
+
+                            <tr class="corpo-tabela-ev">
+                                <td>speed</td>
+                                <td>rookidee, fletchling</td>
+                                <td>south province (area one)</td>
+                                <td>egg sandwich (#60)</td>
+                            </tr>
+                        </table>
+
+                        <h6 id="evh6">power itens</h6>
+                        <ul class="poweritens">
+                            <li><span style="color: #f07070;">power bracer</span>: attacl</li>
+                            <li><span style="color: #e8b060;">power belt</span> defense</li>
+                            <li><span style="color: #f860f8;">power lens</span> sp attack</li>
+                            <li><span style="color: #e8e060;">power band</span> sp defense</li>
+                            <li><span style="color: #60e878;">power weight</span> hp</li>
+                            <li><span style="color: #60d0e8;">power anklet</span> speed</li>
+                        </ul>
+
+                        <h6 id="vitah6">vitamins</h6>
+                        <ul class="vitaitens">
+                            <li><span style="color: #a0f0a0;">hp up</span>: hp</li>
+                            <li><span style="color: #f0a0a0;">protein</span> attack</li>
+                            <li><span style="color: #f0f0a0;">iron</span> defense</li>
+                            <li><span style="color: #a0f0f0;">carbos</span> speed</li>
+                            <li><span style="color: #f8c8a0;">calcium</span> sp attack</li>
+                            <li><span style="color: #e8c868;">zinc</span> sp defense</li>
+                            <li><span style="color: #d4df32;">26 vitamins = 1 status Iv6 full</span></li>
+                            <li><span style="color: #d4df32;">2 status full é o máximo de pontos possível</span></li>
+                        </ul>
+
+                        <h6 id="vitah6">casseroya feather</h6>
+                        <ul class="vitaitens">
+                            <li><span style="color: #ffd84f;">health feather</span>: hp</li>
+                            <li><span style="color: #ff777f;">muscle feather</span> attack</li>
+                            <li><span style="color: #7fa6f6;">resist feather</span> defense</li>
+                            <li><span style="color: #89f1f9;">genius feather</span> sp attack</li>
+                            <li><span style="color: #dc8ce2;">clever feather</span> sp defense</li>
+                            <li><span style="color: #98e774;">swift feather</span> speed</li>
+                            <li><span style="color: #d4df32;">funciona como as vitamins mas dá menos pontos</span></li>
+                        </ul>
+
+                        <h6 id="vitah6">reset berries</h6>
+                        <ul class="vitaitens">
+                            <li><span style="color: #f89030;">pomeg</span>: lowers hp</li>
+                            <li><span style="color: #70a8f8;">kelpsy</span> lowers attack</li>
+                            <li><span style="color: #f8d080;">qualot</span> lowers defense</li>
+                            <li><span style="color: #90d848;">hondew</span> lowers sp attack</li>
+                            <li><span style="color: #f8e038;">grepa</span> lowers sp defense</li>
+                            <li><span style="color: #f86930;">tomato</span> lowers speed</li>
+                            <li><span style="color: #d4df32;">cada berrie reduz em 10 pontos no status específico</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+
+                <img src="imagens/alltrainers.png" id="trainers"/>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="javascript/menu_seletor.js"></script>
+    <script src="javascript/pokemon.js"></script>
+
+</body>
+</html>

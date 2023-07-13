@@ -1,0 +1,71 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+:root {
+    --cor0: #dfe0e6;
+    --cor1: #707174;
+    --cor2: #48494d;
+    --cor3: #242234;
+    --cor4: #3f3252;
+    --cor5: #644199;
+    --cor6: #222025;
+    --cor7: #0b0a0c;
+    --cor8: #df3257;
+    --cor9: #d4df32;
+    --cor10: #32cbdf;
+    --cor11: #e9ecef;
+  }
+
+  .pc h4 {
+    text-align: left;
+    color: var(--cor9);
+  }
+
+  .pc h5 {
+    margin-top: -20px;
+    font-size: 10pt;
+    margin-left: 10px;
+  }
+
+table {
+  font-family: 'silkscreen', sans-serif;
+  border-collapse: collapse;
+  color: #fff;
+  width: 800px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+thead.cabecalho2 {
+    background-color: var(--cor4);
+}
+
+tr.azul {
+    background-color: var(--cor5);
+    color: #fff;
+    font-weight: bold;
+}
+
+tr.branco {
+    background-color: #fff;
+    color: black;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+table a {
+    text-decoration: none;
+    color: rgb(255, 255, 0);
+    font-weight: bolder;
+    text-shadow: 1px 1px 0px #000;
+}
+
+table a:hover {
+    color: var(--cor5);
+    text-decoration: underline;
+    text-shadow: none;
+}

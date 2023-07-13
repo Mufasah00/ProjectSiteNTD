@@ -1,0 +1,293 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+:root {
+    --cor0: #dfe0e6;
+    --cor1: #707174;
+    --cor2: #48494d;
+    --cor3: #242234;
+    --cor4: #3f3252;
+    --cor5: #644199;
+    --cor6: #222025;
+    --cor7: #0b0a0c;
+    --cor8: #df3257;
+    --cor9: #d4df32;
+    --cor10: #32cbdf;
+    --cor11: #e9ecef;
+}
+
+.pk h4 {
+    text-align: left;
+    color: var(--cor9);
+}
+
+.pk h5 {
+    margin-top: -20px;
+    font-size: 10pt;
+    margin-left: 10px;
+}
+
+.tipos h5 {
+    border-bottom: 1px solid #0006;
+    background-color: var(--cor5);
+    text-align: center;
+    color: #fff;
+    /*width: 80%;*/
+    margin: 0px;
+}
+
+.tipos h5.tabelaswal {
+    border-bottom: 1px solid #0006;
+    background-color: var(--cor5);
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    margin: 0px;
+}
+
+/*
+.flexbotao {
+    display: flex;
+}
+*/
+img#trainers {
+    margin-left: -1%;
+    margin-right: 45%;
+    margin-bottom: -20px;
+    /*max-width: 100%;*/ /*deixa a imagem no tamanho normal*/ 
+    width: 102%;
+}
+
+.natures h5 {
+    border-bottom: 1px solid #0006;
+    background-color: var(--cor5);
+    text-align: center;
+}
+/*
+button#expandirb {
+    background: var(--cor5);
+    border: 1px solid var(--cor4);
+    color: #fff;
+    font: normal 11px 'Silkscreen';
+    width: 20%;
+    height: 100%;
+}
+*/
+
+button#expandirb {
+    background: var(--cor5);
+    border: 1px solid var(--cor4);
+    color: #fff;
+    font: normal 11px 'Silkscreen';
+    position: relative;
+    top: 18px;
+}
+
+button#expandirb:hover {
+    cursor: pointer;
+}
+
+table#tabeladetipo {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    /*margin-top: -22px;*/
+    font-size: 10pt;
+  }
+
+table#tabeladetipo thead {
+    background-color: var(--cor5);
+    color: #0b0a0c;
+}
+
+table#tabeladetipo th, table#tabeladetipo td {
+    color: #fff;
+    text-align: center;
+}
+  
+table#tabeladetipo td, table#tabeladetipo th {
+    border: 1px solid var(--cor5);
+    text-align: left;
+    padding: 8px;
+}
+
+tr#corpotabelatipo {
+    background-color: #3a3560;
+}
+
+.drop nav#menu_herbamystica ul#ul_herba {
+    list-style: none;
+    columns: 2;
+    text-align: center;
+}
+
+.drop h5#saltyh5 {
+    border-bottom: 1px solid #0006;
+    background-color: var(--cor5);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.li5estrela {
+    color: #d4df32;
+}
+
+.li6estrela {
+    color: #5521cc;
+}
+
+button#ib, #nb, #ev {
+    text-decoration: none;
+    text-shadow: none;
+    font: normal 9pt 'Silkscreen';
+    color: #fff;
+    transition: linear .5s;
+    margin-right: 10px;
+}
+
+button#ib:hover, #nb:hover, #ev:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: linear .5s;
+}
+
+button#ib {
+    border: 2px solid var(--cor8);
+    background: var(--cor8);
+}
+
+button#nb {
+    border: 2px solid #32a542;
+    background: #32a542;
+}
+
+button#ev {
+    border: 2px solid #df6232;
+    background: #df6232;
+}
+
+.button-center {
+    text-align: center;
+}
+
+table#ivtable {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+th#ivth {
+    border: 2px solid var(--cor5);
+    background: var(--cor5);
+    color: #fff;
+    font: normal 11pt 'Silkscreen';
+    font-weight: bold;
+}
+
+table#ivtable tr, td {
+    background: var(--cor4);
+    border: 2px solid var(--cor5);
+    padding: 2px;
+}
+
+table#ivtable td {
+    padding: 2px;
+}
+
+div#naturelegenda {
+    text-align: center;
+    margin-top: 40px;
+}
+
+div#naturelegenda nav {
+    margin-top: -5px;
+}
+
+div#naturelegenda ul {
+    list-style: none;
+}
+
+.naturetable1 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.naturetable2 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.naturetable3 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.tdnature {
+    background: #3db661;
+    border: 2px solid #3db661;
+}
+
+.tdforte {
+    background: #3d80b6;
+    border: 2px solid #3d80b6;
+}
+
+.tdfraco {
+    background: #b63d3d;
+    border: 2px solid #b63d3d;
+}
+
+div#evtablepoint {
+    margin-top: 60px;
+}
+
+div#evtablepoint table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font: normal 10pt 'Silkscreen';
+  }
+
+div#evtablepoint th {
+    color: #fff;
+    text-align: center;
+    border: 2px solid var(--cor5);
+    background: var(--cor5);
+}
+  
+div#evtablepoint td, th {
+    border: 1px solid var(--cor5);
+    text-align: left;
+    padding: 8px;
+}
+
+.corpo-tabela-ev {
+    background-color: #3a3560;
+}
+
+.poweritens {
+    list-style: none;
+    text-align: center;
+    margin-top: -30px;
+}
+
+h6#evh6 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 13pt;
+}
+
+.vitaitens {
+    list-style: none;
+    text-align: center;
+    margin-top: -30px;
+}
+
+h6#vitah6 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 13pt;
+}

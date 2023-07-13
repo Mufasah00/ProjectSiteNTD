@@ -1,0 +1,201 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+:root {
+    --cor0: #dfe0e6;
+    --cor1: #707174;
+    --cor2: #48494d;
+    --cor3: #242234;
+    --cor4: #3f3252;
+    --cor5: #644199;
+    --cor6: #222025;
+    --cor7: #0b0a0c;
+    --cor8: #df3257;
+    --cor9: #d4df32;
+    --cor10: #32cbdf;
+    --cor11: #e9ecef;
+  }
+
+body {
+    background: var(--cor7);
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--cor6);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--cor5);
+    border: 1px solid var(--cor3);
+}
+
+/*configuração do swal de visitante*/
+.silk-h1 {
+    font: normal 14pt 'Silkscreen';
+    color: #fff;
+}
+
+span#nomevisitante {
+    color: #8548e0;
+}
+
+input#input-visitante {
+    padding: 5px; 
+    border: 2px solid var(--cor5);
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+input#input-visitante:focus {
+    outline: solid 1px #8e43ff ! important;
+    box-shadow: 0 0 10px #8e43ff;
+    border-radius: 5px;
+}
+
+/* configuração do header */
+div.header {
+    position: relative;
+    width: 1200px;
+    height: 115px;
+    margin: -21px auto;
+    color: var(--cor0);
+    background-color: var(--cor4);
+    font-family: 'Silkscreen', sans-serif;
+    border-bottom: 2px solid var(--cor5);
+}
+
+.header h1 {
+    color: var(--cor0);
+    padding: 10px;
+}
+
+.header h2 {
+    color: var(--cor9);
+    font-size: 8pt;
+    margin-left: 30px;
+    margin-top: -40px;
+}
+
+/* gif da donna */
+.donna-gif {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    width: 9%;
+}
+
+/* configuração do menu */
+
+nav#menu {
+    display: block;
+    position: absolute;
+}
+
+nav#menu ul#ul_menu {
+    list-style: none;
+}
+
+nav#menu ul#ul_menu li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav#menu a {
+    text-decoration: none;
+    color: var(--cor0);
+    transition: linear .5s transform;
+    animation-name: select;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+nav#menu a:hover {
+    color: var(--cor9);
+    transition: linear .5s transform;
+    transform: scale(1.3);
+}
+
+/* configuração da luzinha - ainda do menu - integrado com javascript */
+.light {
+    opacity: 0;
+    color: var(--cor10);
+    animation-name: pisca;
+    animation-duration: .9s;
+    animation-iteration-count: infinite;
+}
+  
+@keyframes pisca {
+    from {color: var(--cor10);}
+    to {color: var(--cor4);}
+}
+
+/* light do h2 */
+.light-h2 {
+    font-size: 8pt;
+    color: var(--cor10);
+    animation-name: pisca2;
+    animation-duration: .9s;
+    animation-iteration-count: infinite;
+}
+  
+@keyframes pisca2 {
+    from {color: var(--cor10);}
+    to {color: var(--cor4);}
+}
+
+/* end */
+
+/* configuração do corpo da página, área onde teremos a maior parte dos elementos de cada select */
+div.corpo {
+    width: 1200px;
+    height: 490px;
+    margin: 21px auto;
+    font-family: 'Silkscreen', sans-serif;
+    background-color: var(--cor3);
+    padding: 0px;
+}
+
+.container-conteudo-fixo {
+    width: 900px;
+    height: 450px;
+    margin: auto;
+    border-right: 1px solid var(--cor5);
+    border-left: 1px solid var(--cor5);
+    border-bottom: 1px solid var(--cor5);
+    color: var(--cor0);
+    padding: 8px;
+    text-indent: 20px;
+    font-size: 12pt;
+}
+
+/* container de conteúdo físico para as outras páginas */
+.container-conteudo-fixo2 {
+    width: 900px;
+    height: 450px;
+    margin: auto;
+    border-right: 1px solid var(--cor5);
+    border-left: 1px solid var(--cor5);
+    border-bottom: 1px solid var(--cor5);
+    color: var(--cor0);
+    padding: 8px;
+    font-size: 12pt;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.container-conteudo-fixo2::-webkit-scrollbar {
+    width: 12px;
+}
+
+.container-conteudo-fixo2::-webkit-scrollbar-track {
+    background: var(--cor6);
+}
+
+.container-conteudo-fixo2::-webkit-scrollbar-thumb {
+    background-color: var(--cor5);
+    border: 1px solid var(--cor3);
+}

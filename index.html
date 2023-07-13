@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagens/ntdicon.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <title>NT-D System</title>
+</head>
+<body>
+    <!--start header-->
+    <div class="header">
+        <h1>NT-D System</h1>
+        <h2>New Type Drive System<span class="light-h2">❚</span></h2>
+
+        <!--img - donnatalk gif-->
+        <img class="donna-gif" src="imagens/donna2.gif"/>
+
+        <nav id="menu">
+            <ul id="ul_menu">
+                <li onmouseover="mouseOver()" onmouseout="mouseOut()"><a href="index.html" target="_self">home<span id="luz" class="light">❚</span></a></li>
+                <li onmouseover="mouseOver2()" onmouseout="mouseOut2()"><a href="videogames.html" target="_self">videogames<span id="luz2" class="light">❚</span></a></li>
+                <li onmouseover="mouseOver3()" onmouseout="mouseOut3()"><a href="maquina.html" target="_self">máquina<span id="luz3" class="light">❚</span></a></li>
+                <li onmouseover="mouseOver4()" onmouseout="mouseOut4()"><a href="quest.html" target="_self">quest log<span id="luz4" class="light">❚</span></a></li>
+                <li onmouseover="mouseOver5()" onmouseout="mouseOut5()"><a href="projetos.html" target="_self">projetos<span id="luz5" class="light">❚</span></a></li>
+                <li onmouseover="mouseOver6()" onmouseout="mouseOut6()"><a href="pokemon.html" target="_self">pokémon<span id="luz6" class="light">❚</span></a></li>
+                <li onmouseover="mouseOver7()" onmouseout="mouseOut7()"><a href="monsterhunter.html" target="_self">monster hunter<span id="luz7" class="light">❚</span></a></li>
+            </ul> 
+        </nav>
+
+    </div>
+
+    <div class="corpo">
+
+        <div class="container-conteudo-fixo">
+            <p style="text-align: center; text-indent: 5px;">Olá <strong><span id="nomevisitante"></span></strong> seja bem-vindo! o sistema nt-d é 
+            um projeto particular onde eu aplico alguns de meus conhecimentos para exemplificar um desenvolvimento de site e telas. Agradeço muito por sua visita, que a vista seja de seu agrado.</p>
+            
+            <p style="text-align: center; margin-top: 25px; opacity: .2;"><img src="imagens/M.png"/></p>
+        </div>
+
+    </div>
+
+
+
+    <!--start javascript-->
+    <script src="javascript/menu_seletor.js"></script>
+    <script src="javascript/visitante.js"></script>
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagens/ntdicon.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/videogames.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <title>NT-D System</title>
+
+</head>
+<body>
+    <!--start header-->
+    <div class="header">
+        <h1>NT-D System</h1>
+        <h2>New Type Drive System<span class="light-h2">❚</span></h2>
+
+        <!--img - donnatalk gif-->
+        <img class="donna-gif" src="imagens/donna2.gif"/>
+
+        <nav id="menu">
+            <ul id="ul_menu">
+                <li  onmouseover="mouseOver()" onmouseout="mouseOut()"><a href="index.html" target="_self">home<span id="luz" class="light">❚</span></a></li>
+                <li onmouseover="mouseOver2()" onmouseout="mouseOut2()"><a href="videogames.html" target="_self">videogames<span id="luz2" class="light">❚</span></a></li>
+                <li onmouseover="mouseOver3()" onmouseout="mouseOut3()"><a href="maquina.html" target="_self">máquina<span id="luz3" class="light">❚</span></a></li>
+                <li onmouseover="mouseOver4()" onmouseout="mouseOut4()"><a href="quest.html" target="_self">quest log<span id="luz4" class="light">❚</span></a></li>
+                <li onmouseover="mouseOver5()" onmouseout="mouseOut5()"><a href="projetos.html" target="_self">projetos<span id="luz5" class="light">❚</span></a></li>
+                <li onmouseover="mouseOver6()" onmouseout="mouseOut6()"><a href="pokemon.html" target="_self">pokémon<span id="luz6" class="light">❚</span></a></li>
+                <li onmouseover="mouseOver7()" onmouseout="mouseOut7()"><a href="monsterhunter.html" target="_self">monster hunter<span id="luz7" class="light">❚</span></a></li>
+            </ul> 
+        </nav>
+
+    </div>
+
+    <div class="corpo">
+
+        <div class="container-conteudo-fixo2">
+
+        <div class="games">
+            <h3>Coleção de Videogames</h3>
+            <h4>legendas</h4>
+
+            <p class="alinhando-span">
+            <span style="padding: 5px; color: #3db661; margin: 0px;">▰ &nbsp;100%</span>
+            <span style="padding: 5px; color: #b4b63d; margin: 0px;">▰ &nbsp;jogado(%?)</span>
+            <span style="padding: 5px; color: #b63d3d; margin: 0px;">▰ &nbsp;não jogado</span>
+            </p>
+        </div>
+
+        <div class="nintendo">
+            <h5>nintendo</h5>
+            
+            <div class="carrosel">
+                <button class="botao-carrosel" id="botaoleft"><i class="fa-solid fa-caret-left"></i></button>
+                    <div class="g1" id="game-image">
+                        <div id="res-img">
+                            <img src="imagens/videogames/nintendo/g1.png" id="imagem-jogo">
+                        </div>
+                        <div id="res-info">
+                            <ul id="carrosel-ul">
+                                <li>zerado 100%</li>
+                                <li>400+ horas</li>
+                                <li>nota: <i class="fa-solid fa-medal" style="color: gold;"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                   <!-- <div class="g2" id="res-info">
+
+                    </div> -->
+                <button class="botao-carrosel" id="botaoright"><i class="fa-solid fa-caret-right"></i></button>
+            </div>
+
+            <ul id="gamesul">
+                <li class="cem">The Legend of Zelda Breath of the Wild</li>
+                <li class="cem">Super Mario Odyssey</li>
+                <li class="cem">Super Smash Bros Ultimate</li>
+                <li class="cem">Mario Kart 8 Deluxe</li>
+                <li class="cem">Katana Zero</li>
+                <li class="cem">Stardew Valley</li>
+                <li class="jogado">Souldiers</li>
+                <li class="cem">Monster Sanctuary</li>
+                <li class="jogado">Scott Pilgrim vs The World</li>
+                <li class="cem">Moonlighter</li>
+                <li class="cem">Monster Hunter Risen Sunbreak</li>
+                <li class="cem">Pokémon Scarlet</li>
+                <li class="nao-jogado">Tales of Vesperia</li>
+                <li class="cem">Starlink Battle for Atlas</li>
+                <li class="jogado">Shovel Knight Treasure Trove</li>
+                <li class="nao-jogado">Haiku the Robot</li>
+                <li class="cem">Dusk Diver</li>
+                <li class="nao-jogado">Trials of Mana</li>
+                <li class="jogado">Dragon Quest III</li>
+                <li class="cem">Huntdown</li>
+                <li class="nao-jogado">Chained Echoes</li>
+                <li class="nao-jogado">Into the Breach</li>
+            </ul>
+        </div>
+
+
+        <div class="steam">
+            <h5>steam</h5>
+
+            <div class="carrosel">
+                <button class="botao-carrosel" id="botaoleft2"><i class="fa-solid fa-caret-left"></i></button>
+                    <div class="g1" id="game-image">
+                        <div id="res-img2">
+                            <img src="imagens/videogames/steam/g1.png" id="imagem-jogo2">
+                        </div>
+                        <div id="res-info2">
+                            <ul id="carrosel-ul">
+                                <li>zerado 100%</li>
+                                <li>86+ horas</li>
+                                <li>nota: <i class="fa-solid fa-medal" style="color: #c56c2c;"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                   <!-- <div class="g2" id="res-info">
+
+                    </div> -->
+                <button class="botao-carrosel" id="botaoright2"><i class="fa-solid fa-caret-right"></i></button>
+            </div>
+
+            <ul id="gamesul">
+                <li class="cem">Mount & Blade Warband</li>
+                <li class="jogado">Worms Ultimate Mayhem</li>
+                <li class="nao-jogado">Beat Cop</li>
+                <li class="jogado">D&D Chronicles of Mystara</li>
+                <li class="cem">Oceans Heart</li>
+                <li class="jogado">Star Wars Jedi Knight Jedi Academy</li>
+                <li class="nao-jogado">Sunset Overdrive</li>
+                <li class="jogado">Stoneshard</li>
+                <li class="nao-jogado">Chrono Trigger</li>
+                <li class="cem">Aseprite</li>
+                <li class="cem">Rpg Maker VX Ace</li>
+                <li class="nao-jogado">Horizon's Gate</li>
+                <li class="nao-jogado">Streets of Rogue</li>
+                <li class="nao-jogado">Ys I & II Chronicles +</li>
+                <li class="nao-jogado">Ys The Oath in Felghana</li>
+                <li class="nao-jogado">Ys Memories of Celceta</li>
+                <li class="nao-jogado">Ys Origin</li>
+                <li class="nao-jogado">Ys Seven</li>
+            </ul>
+        </div>
+
+
+        <div class="playstation">
+            <h5>playstation</h5>
+
+            <div class="carrosel">
+                <button class="botao-carrosel" id="botaoleft3"><i class="fa-solid fa-caret-left"></i></button>
+                    <div class="g1" id="game-image">
+                        <div id="res-img3">
+                            <img src="imagens/videogames/playstation/g1.png" id="imagem-jogo3">
+                        </div>
+                        <div id="res-info3">
+                            <ul id="carrosel-ul">
+                                <li>zerado 80%</li>
+                                <li>100+ horas</li>
+                                <li>nota: <i class="fa-solid fa-medal" style="color: #c56c2c;"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                   <!-- <div class="g2" id="res-info">
+
+                    </div> -->
+                <button class="botao-carrosel" id="botaoright3"><i class="fa-solid fa-caret-right"></i></button>
+            </div>
+
+            <ul id="gamesul">
+                <li class="jogado">Cyberpunk 2077</li>
+                <li class="jogado">Yakuza 6 The Song of Life</li>
+                <li class="cem">The Witcher 3 Wild Hunt</li>
+                <li class="cem">Spider-Man</li>
+                <li class="cem">Batman Arkham Knight</li>
+                <li class="cem">Horizon Zero Dawn</li>
+                <li class="cem">J-Stars Victory VS +</li>
+                <li class="cem">Mafia III</li>
+                <li class="jogado">Street Fighter V</li>
+                <li class="cem">The Last of Us</li>
+                <li class="jogado">Assassins Creed Odyssey</li>
+                <li class="jogado">Assassins Creed Unity</li>
+                <li class="jogado">Journey</li>
+                <li class="nao-jogado">Subnautica</li>
+                <li class="jogado">Mortal Kombat 11</li>
+                <li class="jogado">Monster Hunter World Iceborne</li>
+                <li class="jogado">Metal Gear Solid V</li>
+                <li class="jogado">Final Fantasy XV</li>
+                <li class="nao-jogado">Abzu</li>
+                <li class="jogado">Enter the Gungeon</li>
+                <li class="jogado">Ratchet & Clanck</li>
+                <li class="jogado">Ni no Kuni II Revenant Kingdom</li>
+                <li class="jogado">One Piece World Seeker</li>
+                <li class="jogado">Uncharted The Nathan Drake Collection</li>
+                <li class="cem">Omega Strike</li>
+                <li class="jogado">Agents of Mayhem</li>
+                <li class="jogado">Pac-Man Championship Edition 2</li>
+                <li class="nao-jogado">Lego Ninjago</li>
+                <li class="nao-jogado">Injustice Gods Among Us</li>
+                <li class="jogado">Battlefield 1</li>
+                <li class="cem">Dark Souls 3</li>
+                <li class="nao-jogado">Tales of Arise</li>
+            </ul>
+        </div>
+
+
+        <div class="estatistica">
+            <h5>Estatísticas</h5>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>plataforma</th>
+                        <th>jogos adquiridos</th>
+                        <th>zerados 100%</th>
+                        <th>zerados (%?)</th>
+                        <th>dropados</th>
+                    </tr>
+                </thead>
+
+                <tr class="corpo-tabela">
+                    <td>Nintendo</td>
+                    <td>22</td>
+                    <td>11</td>
+                    <td>13</td>
+                    <td>0</td>
+                </tr>
+
+                <tr class="corpo-tabela">
+                    <td>Steam</td>
+                    <td>18</td>
+                    <td>4</td>
+                    <td>6</td>
+                    <td>0</td>
+                </tr>
+
+                <tr class="corpo-tabela">
+                    <td>Playstation</td>
+                    <td>32</td>
+                    <td>9</td>
+                    <td>18</td>
+                    <td>13</td>
+                </tr>
+
+                <tr class="corpo-tabela">
+                    <td>Total</td>
+                    <td class="etot">72</td>
+                    <td class="etot">24</td>
+                    <td class="etot">37</td>
+                    <td class="etot">13</td>
+                </tr>
+            </table>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+    <script src="javascript/menu_seletor.js"></script>
+    <script src="javascript/carroselvideogames.js"></script>
+    
+
+</body>
+</html>

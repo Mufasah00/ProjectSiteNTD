@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagens/ntdicon.png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/projetos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <title>NT-D System</title>
+</head>
+<body>
+    <!--start header-->
+    <div class="header">
+        <h1>NT-D System</h1>
+        <h2>New Type Drive System<span class="light-h2">❚</span></h2>
+
+        <!--img - donnatalk gif-->
+        <img class="donna-gif" src="imagens/donna2.gif"/>
+
+        <nav id="menu">
+            <ul id="ul_menu">
+                <li onmouseover="mouseOver()" onmouseout="mouseOut()"><a href="index.html" target="_self">home<span id="luz" class="light">❚</span></a></li>
+                <li onmouseover="mouseOver2()" onmouseout="mouseOut2()"><a href="videogames.html" target="_self">videogames<span id="luz2" class="light">❚</span></a></li>
+                <li onmouseover="mouseOver3()" onmouseout="mouseOut3()"><a href="maquina.html" target="_self">máquina<span id="luz3" class="light">❚</span></a></li>
+                <li onmouseover="mouseOver4()" onmouseout="mouseOut4()"><a href="quest.html" target="_self">quest log<span id="luz4" class="light">❚</span></a></li>
+                <li onmouseover="mouseOver5()" onmouseout="mouseOut5()"><a href="projetos.html" target="_self">projetos<span id="luz5" class="light">❚</span></a></li>
+                <li onmouseover="mouseOver6()" onmouseout="mouseOut6()"><a href="pokemon.html" target="_self">pokémon<span id="luz6" class="light">❚</span></a></li>
+                <li onmouseover="mouseOver7()" onmouseout="mouseOut7()"><a href="monsterhunter.html" target="_self">monster hunter<span id="luz7" class="light">❚</span></a></li>
+            </ul> 
+        </nav>
+
+    </div>
+
+    <div class="corpo">
+
+        <div class="container-conteudo-fixo2">
+            
+            <div class="conteinerpasta" onclick="pa()"> 
+                <img src="imagens/pasta.png"> <div class="texto">Pixel Art</div>
+            </div>
+
+            <div class="conteinerpasta" onclick="sb()"> 
+                <img src="imagens/pasta.png"> <div class="texto">Sketchbook</div>
+            </div>
+
+            <div class="conteinerpasta" onclick="art()"> 
+                <img src="imagens/pasta.png"> <div class="texto">Ilustrações</div>
+            </div>
+            
+            <div class="conteinerpasta" onclick="gamedev()"> 
+                <img src="imagens/pasta.png"> <div class="texto">projeto 4</div>
+            </div>
+
+            <div class="conteinerpasta" onclick="p5()"> 
+                <img src="imagens/pasta.png"> <div class="texto">projeto 5</div>
+            </div>
+
+            <div id="res">
+             <!--
+                <div id="pixelart">
+                    <p>
+                        Galeria com as minhas pixel art mais recentes. Desde estudos variados até algumas 
+                        tentativas de produzir animações mais básicas e fluídas. Também fiz alguns estudos de design, 
+                        como os personagens de Chrono Trigger, para melhor entendimento da estrutura e soluções usadas 
+                        na época.
+                    </p>
+
+                    <div class="row"> 
+                        <div class="column">
+                          <img src="imagens/arquivo_pa/pa1.png">
+                          <img src="imagens/arquivo_pa/pa2.png">
+                          <img src="imagens/arquivo_pa/pa2a.gif">
+                          <img src="imagens/arquivo_pa/pa7.png">
+                        </div>
+
+                        <div class="column">
+                            <img src="imagens/arquivo_pa/pa3.png">
+                            <img src="imagens/arquivo_pa/pa3a.gif">
+                            <img src="imagens/arquivo_pa/pa3ab.gif">
+                            <img src="imagens/arquivo_pa/pa5.png">
+                        </div>
+
+                        <div class="column">
+                          <img src="imagens/arquivo_pa/pa6.png">
+                          <img src="imagens/arquivo_pa/pa6a.gif">
+                          <img src="imagens/arquivo_pa/pa4.png">
+                          <img src="imagens/arquivo_pa/pa4a.gif">
+                        </div>  
+                      </div>
+
+                </div>
+
+                <div id="sketchbook">
+                    <p> Sketchbook com ideias de personagens feitos nos últimos meses.
+                    </p>
+
+                    <div class="row"> 
+                        <div class="column">
+                          <img src="imagens/arquivo_sb/e10.png">
+                          <img src="imagens/arquivo_sb/e4.png">
+                          <img src="imagens/arquivo_sb/e3.png">
+                          <img src="imagens/arquivo_sb/e1.png">
+                          <img src="imagens/arquivo_sb/e11.png">
+                        </div>
+
+                        <div class="column">
+                            <img src="imagens/arquivo_sb/e2.png">
+                            <img src="imagens/arquivo_sb/e5.png">
+                            <img src="imagens/arquivo_sb/e7.png">
+                            <img src="imagens/arquivo_sb/e8.png">
+                        </div>
+
+                        <div class="column">
+                            <img src="imagens/arquivo_sb/e9.png">
+                            <img src="imagens/arquivo_sb/e6.png">
+                        </div>  
+                      </div>
+
+                </div>
+
+                <div id="art">
+                    <p> 
+                        Meus trabalhos mais recentes
+                    </p>
+
+                    <div class="row"> 
+                        <div class="column">
+                          <img src="imagens/arquivo_art/a1.png">
+                          <img src="imagens/arquivo_art/a2.png">
+                          <img src="imagens/arquivo_art/a3.png">
+                          <img src="imagens/arquivo_art/a4.png">
+                          <img src="imagens/arquivo_art/a5.png">
+                          <img src="imagens/arquivo_art/a16.png">
+                        </div>
+
+                        <div class="column">
+                            <img src="imagens/arquivo_art/a6.png">
+                            <img src="imagens/arquivo_art/a7.png">
+                            <img src="imagens/arquivo_art/a8.png">
+                            <img src="imagens/arquivo_art/a9.png">
+                            <img src="imagens/arquivo_art/a10.png">
+                            <img src="imagens/arquivo_art/a17.png">
+                        </div>
+
+                        <div class="column">
+                            <img src="imagens/arquivo_art/a11.png">
+                            <img src="imagens/arquivo_art/a12.png">
+                            <img src="imagens/arquivo_art/a13.png">
+                            <img src="imagens/arquivo_art/a14.png">
+                            <img src="imagens/arquivo_art/a15.png">
+                            <img src="imagens/arquivo_art/a18.png">
+                            <img src="imagens/arquivo_art/a19.png">
+                        </div>  
+                      </div>
+
+                </div>
+            -->
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="javascript/menu_seletor.js"></script>
+
+    <script src="javascript/projetos.js"></script>
+</body>
+</html>

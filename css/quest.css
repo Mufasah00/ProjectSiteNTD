@@ -1,0 +1,83 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+:root {
+    --cor0: #dfe0e6;
+    --cor1: #707174;
+    --cor2: #48494d;
+    --cor3: #242234;
+    --cor4: #3f3252;
+    --cor5: #644199;
+    --cor6: #222025;
+    --cor7: #0b0a0c;
+    --cor8: #df3257;
+    --cor9: #d4df32;
+    --cor10: #32cbdf;
+    --cor11: #e9ecef;
+  }
+
+div#quest-log-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*
+div#newtask {
+    text-align: justify;
+}
+
+div#newtaskbutton {
+    text-align: justify;
+}
+*/
+
+div#ul-listadequest {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div#li-listadequest {
+    display: flex;
+    border: 1px solid white;
+    width: 450px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+div#li-listadequest p {
+    margin-left: 10px;
+}
+
+.pendente-quest {
+    color: #b63d3d;
+    margin-left: 7px;
+}
+
+.progresso-quest {
+    color: #b4b63d;
+    margin-left: 7px;
+}
+
+.concluido-quest {
+    color: #3db661;
+    margin-left: 7px;
+}
+
+div#legenda-quest {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quest-title h4 {
+    text-align: left;
+    color: var(--cor9);
+}
+
+.quest-title h5 {
+    margin-top: -20px;
+    font-size: 10pt;
+    margin-left: 10px;
+  }
